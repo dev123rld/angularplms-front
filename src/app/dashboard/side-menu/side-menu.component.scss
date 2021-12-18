@@ -1,0 +1,28 @@
+
+// .container{
+//     width: 20%;
+//     background-color: #fbfcfe;
+//     padding: 5px;
+// }
+.menuContent{
+width: 100%;
+}
+.menuContent p{
+    padding: 10px;
+    font-size: larger;
+}
+.menuContent p a{
+    text-decoration: none;
+    color:#ebebed ;
+}
+.menuContent:hover{
+    background-color: #dddbf9;
+    color: #a49eeb;
+    border-radius: 5px;
+}
+.menuContent p a:hover{
+    background-color: #dddbf9;
+    color: #a49eeb;
+}
+
+

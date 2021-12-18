@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="head">
+<div class="image">
+    <div class="menuContent">
+   <img src="/assets/images/menu-icon.svg" alt="" (click)="onClick()">
+</div>
+<div>
+    <h4>Panamoure</h4>
+</div>
+</div>
+<div class="nav">
+    <div><button>Log Out</button></div>
+    
+    <div class="userIcon"><a href=""><img src="/assets/images/icons8-user-50.png" alt=""></a>
+
+    </div>
+    <div class="userName">Welcome</div>
+    </div>
+    <hr>
+    <div class="dashboard" [style.width]="active ? '100%' : '80%'">
+        <h3>Dashboard</h3>
+    </div>
+    <hr>
+<div class="center" >
+    <div *ngIf="active"  class="sideMenu"  >
+<app-side-menu></app-side-menu>
+
+    </div>
+    <div class="cardContent" [style.width]="active ? '80%' : '100%'">
+        <app-card></app-card>
+    </div>
+</div>
+<div class="btn">
+<button ><a routerLink='/createClient'><img src="/assets/images/btn-image.png" alt=""></a></button>
+</div>
+</div>

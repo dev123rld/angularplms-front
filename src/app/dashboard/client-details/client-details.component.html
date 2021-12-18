@@ -1,0 +1,201 @@
+<div class="containers">
+    <div class="head">
+        <div class="image">
+            <div class="menuContent">
+                <img src="/assets/images/menu-icon.svg" alt="">
+            </div>
+            <div>
+                <h4>Panamoure</h4>
+            </div>
+        </div>
+        <div class="nav">
+
+            <div class="userIcon"><img src="/assets/images/icons8-user-50.png" alt=""></div>
+            <div class="userName">Welcome</div>
+        </div>
+    </div>
+    <!-- <hr>
+    <div class="dashboard">
+        <h3>Dashboard</h3>
+    </div> -->
+    <hr>
+    <div class="center">
+
+        <div class="cardContents">
+
+            <div class="container">
+                <div class="cardContent">
+                    <div class="subCard">
+                        <div>
+                            <h2>{{userStatus.data[0].UserCount}}</h2>
+                        </div>
+                        <div>
+                            <h4>Total User</h4>
+                        </div>
+                        <div>
+                            <img src="/assets/images/icons8-user-80.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContent">
+                    <div class="subCard">
+                        <div>
+                            <h2>{{userStatus.data[1].UserCount}}</h2>
+                        </div>
+                        <div>
+                            <h4>Active User</h4>
+                        </div>
+                        <div>
+                            <img src="/assets/images/icons8-user-80.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContent">
+                    <div class="subCard">
+                        <div>
+                            <h2>{{userStatus.data[2].UserCount}}</h2>
+                        </div>
+                        <div>
+                            <h4>Inactive User</h4>
+                        </div>
+                        <div>
+                            <img src="/assets/images/icons8-user-80.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContent">
+                    <div class="subCard">
+                        <div>
+                            <h2>{{userStatus.data[3].UserCount}}</h2>
+                        </div>
+                        <div>
+                            <h4>Recent Users</h4>
+                        </div>
+                        <div>
+                            <img src="/assets/images/icons8-course-50.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    
+    <div class="tableContent">
+<div class="tableInfo">
+    <h3>Role Management</h3>
+
+        <table >
+            <tr>
+                <th>RoleName</th>
+                <th>RoleCount</th>
+            </tr>
+            <tr *ngFor="let data of userRole.data">
+
+                <td>{{data.roleName}}</td>
+                <td>{{data.roleCount || 0}}</td>
+
+            </tr>
+        </table>
+
+        
+    </div>
+    </div>
+    <!-- <div class="tableContent">
+        <div class="tableInfo">
+       <h2>{{trainingData.data[0].TrainingCount}}</h2>
+       <h4>TrainingCount</h4>
+        </div>
+    
+    
+    </div> -->
+    <!-- <div class="tableContent">
+        <div class="tableInfo">
+             <h4>{{}}</h4> -->
+            <!-- <table>
+                <tr>
+                    <th>EventType</th>
+                    <th>EventCount</th>
+                </tr>
+                <tr *ngFor="let data of eventData.data">
+        
+                    <td>{{data.EventType}}</td>
+                    <td>{{data.EventCount}}</td>
+        
+                </tr>
+            </table>
+        </div>
+        </div> --> 
+        
+    <div class="tableContent">
+        
+
+        <div class="tableInfo">
+            <h3>Course Management</h3>
+        <table>
+            <tr>
+                <th>CourseType</th>
+                <th>CourseCount</th>
+            </tr>
+            <tr *ngFor="let data of courseData.data">
+
+                <td>{{data.CourseType}}</td>
+                <td>{{data.CourseCount}}</td>
+
+            </tr>
+        </table> 
+        <div class="eventContent">
+            <h3>Event Management</h3>
+        <table>
+            <tr>
+                <th>EventType</th>
+                <th>EventCount</th>
+            </tr>
+            <tr >
+    
+                <td>{{eventData[2].EventType}}</td>
+                <td>{{eventData[2].EventCount}}</td>
+    
+            </tr>
+            <tr>
+    
+                <td>{{eventData[1].EventType}}</td>
+                <td>{{eventData[1].EventCount}}</td>
+    
+            </tr>
+            <tr >
+    
+                <td>Total</td>
+                <td>{{eventData[0].EventCount}}</td>
+    
+            </tr>
+
+        </table>
+    </div>
+<!-- <div class="tableInfos">
+            <h2>{{trainingData.data[0].TrainingCount}}</h2>
+            <h4>TrainingCount</h4>
+             </div> -->
+             <div class="eventContent">
+                <h3>Training Management</h3>
+            <table>
+                <tr>
+                    <th>Training</th>
+                    <th>TrainingCount</th>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>{{trainingData.data[0].TrainingCount}}</td>
+                </tr>
+               
+            </table>
+        </div>
+
+        </div>
+    
+</div>
+
+</div>

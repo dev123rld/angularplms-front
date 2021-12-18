@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    background-color: #fffcfe;
+}
+.head{
+    width: 100%;
+    background: #fffcfe;
+
+}
+.image{
+    width: 20%;
+    float: left;
+    background-color: #fffcfe;
+    padding: 20px 0px;
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+    color: #4e5761;
+
+}
+.menuContent img{
+cursor: pointer;
+}
+.nav{
+    width: 80%;
+    float: left;
+    background: #fffcfe;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    padding-right: 20px;
+
+}
+.userIcon a img{
+    width: 25px;
+}
+.userName{
+    color: #4e5761;
+}
+.dashboard{
+    width: 100%;
+    background-color: #fffcfe;
+}
+.dashboard h3{
+    padding: 15px 0px 30px 20px;
+    color: #4e5761;
+}
+.center{
+    width: 100%;
+
+}
+.sideMenu{
+    width: 20%;
+    float: left;
+    background-color: #596274;
+    padding: 5px;
+    border-radius: 0px 0px 15px;
+}
+.cardContent{
+    width: 80%;
+    float: left;
+    background-color: lightgray;
+}
+
+.btn{
+width: 100%;
+float: left;
+}
+.btn button{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: pink;
+    border-style: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+

@@ -1,0 +1,28 @@
+.container{
+  width: 100%;
+  display: none;
+}
+.subContainer{
+  width: 15%;
+    background-color: #f5f2f2;
+    text-align: center;
+    border-radius: 15px;
+}
+.image img{
+  width: 30px;
+    padding-top: 10px;
+}
+.head{
+  padding-bottom: 10px;
+    color: #6a9191;
+}
+.btn{
+  padding-bottom: 15px;
+}
+.btn button{
+  border-style: none;
+    border-radius: 10px;
+    background-color: darkseagreen;
+    padding: 5px;
+    cursor: pointer;
+}

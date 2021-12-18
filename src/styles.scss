@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Fjalla+One&family=Montserrat&family=Noto+Sans&family=Nunito+Sans:wght@200;300&display=swap');
+@import '~ngx-toastr/toastr.css';
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    // font-family: 'Barlow', sans-serif;
+// font-family: 'Fjalla One', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+// font-family: 'Nunito Sans', sans-serif;
+}

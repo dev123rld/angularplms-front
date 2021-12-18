@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="row">
+        <form class="form" [formGroup]="myReactiveForm" (ngSubmit)="onSubmit();myReactiveForm.reset();">
+            <div class="logo">
+                <img src="/assets/images/logopanab.png" alt="">
+            </div>
+            <div class="formContent">
+                <div class="subFormContent">
+
+<div class="inputContent">
+    <div class="label"><label for="">Client Name</label></div>
+    <input type="text" placeholder="Client Name" formControlName="client_name">
+    <div *ngIf="myReactiveForm.controls['client_name'].invalid && myReactiveForm.controls['client_name'].touched"
+    class="text-danger">
+    <div *ngIf="myReactiveForm.controls['client_name']?.errors?.['required']" class="text-danger">
+        ClientName is required.
+    </div>
+</div>
+
+
+</div>
+<div class="inputContent">
+    <div><label for="">Company Name</label></div>
+    <input type="text" placeholder="Company Name"formControlName="company_name">
+    <div *ngIf="myReactiveForm.controls['company_name'].invalid && myReactiveForm.controls['company_name'].touched"
+    class="text-danger">
+    <div *ngIf="myReactiveForm.controls['company_name']?.errors?.['required']" class="text-danger">
+        CompanyName is required.
+    </div>
+</div>
+</div>
+<div class="inputContent">
+    <div><label for="">Client Code</label></div>
+    
+    <input type="text" placeholder="Client Code" formControlName="client_code">
+    <div *ngIf="myReactiveForm.controls['client_code'].invalid && myReactiveForm.controls['client_code'].touched"
+    class="text-danger">
+    <div *ngIf="myReactiveForm.controls['client_code']?.errors?.['required']" class="text-danger">
+        ClientCode is required.
+    </div>
+</div>
+</div>
+<div class="inputContent">
+    <div><label for=""></label>Email</div>
+    <input type="email" placeholder="Email" formControlName="email">
+    <div *ngIf="myReactiveForm.controls['email'].invalid && myReactiveForm.controls['email'].touched"
+                    class="text-danger">
+                    <div *ngIf="myReactiveForm.controls['email']?.errors?.['required']" class="text-danger">
+                        Email is required.
+                    </div>
+                    <div *ngIf="myReactiveForm.controls['email']?.errors?.['pattern']">Invalid Email</div>
+                </div>
+</div>
+<div class="inputContent">
+    <div><label for=""></label>Mobile</div>
+    <input type="text" placeholder="Mobile" formControlName="mobile" (keypress)="onlyNumeric($event)">
+    <div *ngIf="myReactiveForm.controls['mobile'].invalid && myReactiveForm.controls['mobile'].touched"
+                class="text-danger">
+    <div *ngIf="myReactiveForm.controls['mobile']?.errors?.['required']" class="text-danger">
+        Mobile No is required.
+    </div>
+    <div *ngIf="myReactiveForm.controls['mobile']?.errors?.['pattern']">Enter only Numeric</div>
+    <div *ngIf="myReactiveForm.controls['mobile']?.errors?.['minlength']">Mobile not less then 10 digit</div>
+    <div *ngIf="myReactiveForm.controls['mobile']?.errors?.['maxlength']">Mobile not greater then 15 digit</div>
+</div>
+</div>
+<div [ngClass]="myReactiveForm.valid?'':'disabled'" class="btn">
+    <button [disabled]="!myReactiveForm.valid" type="submit">Submit</button>
+</div>
+</div>
+        </div>
+    </form>
+        <div class="image">
+<div class="imageContent">
+    <img src="/assets/images/bg1.svg" alt="">
+</div>
+        </div>
+    </div>
+</div>

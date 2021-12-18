@@ -1,0 +1,86 @@
+.container{
+    width: 100%;
+    background-color: #ffffff;
+}
+.row{
+    width: 100%;
+    background-color: #ffff;
+}
+.form{
+    width: 50%;
+    
+    float: left;
+    background-color: #ffff;
+}
+.image{
+    width: 50%;
+    background-color: #ffff;
+    float: left;
+
+}
+.formContent{
+    width: 60%;
+    background-color: #ffff;
+    margin: auto;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 15px;
+}
+.subFormContent{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0px
+}
+.logo{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px 50px 0px;
+    text-align: center;
+}
+.logo img{
+    width: 40%;
+}
+.inputContent{
+    width: 100%;
+    color: #757575;
+    padding-bottom: 8px
+}
+.inputContent input{
+    padding: 10px;
+    width: 100%;
+    border-style: none;
+    border-radius: 6px;
+    background-color: #efefef;
+    outline-color: transparent;
+}
+.btn{
+    width: 100%;
+    padding-top: 20px;
+}
+.btn button{
+    width: 100%;
+    padding:10px;
+    border-style: none;
+    background-color: #62a1fe;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #ffffff;
+
+}
+.imageContent{
+    width: 100%;
+   
+}
+.imageContent img{
+    width: 80%;
+    background-color: #ffff;
+    padding: 170px 20px 100px 20px;
+}
+.text-danger{
+    color: rgb(238, 95, 95);
+    padding-top: 3px;
+    font-size: small;
+}
+.disabled{
+    opacity: 0.5;
+}
+
